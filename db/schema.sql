@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS paintings_dev;
 CREATE DATABASE paintings_dev;
 
 \c paintings_dev;
+DROP TABLE IF EXISTS paintings;
 
 CREATE TABLE paintings (
  id SERIAL PRIMARY KEY,

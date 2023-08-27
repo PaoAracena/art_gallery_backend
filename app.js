@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 // Paintings ROUTES
 const paintingsController = require("./controllers/paintingController");
-app.use("/paintimgs", paintingsController);
+app.use("/paintings", paintingsController);
 
 // 404 PAGE
 app.get("*", (req, res) => {

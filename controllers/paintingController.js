@@ -12,9 +12,9 @@ const {
 //INDEX
 paintings
 .get("/", async (req, res) => {
-    const allPaintingd = await getAllPaintingd();
-    if (allPaintingd[0]) {
-      res.status(200).json(allPaintingd);
+    const allPaintings = await getAllPaintings();
+    if (allPaintings[0]) {
+      res.status(200).json(allPaintings);
     } else {
       res.status(500).json({ error: "server error" });
     }
